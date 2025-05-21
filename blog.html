@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | ExUrban Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .blog-container {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .blog-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .blog-header img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 20px #00f7ff88;
+    }
+
+    .blog-header h1 {
+      font-size: 2.5rem;
+      color: #00f7ff;
+    }
+
+    .blog-header p {
+      color: #888;
+    }
+
+    .blog-post-preview {
+      background-color: #111;
+      border: 2px solid #00f7ff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 20px #00f7ff22;
+      transition: transform 0.3s ease;
+    }
+
+    .blog-post-preview:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-post-preview h2 {
+      color: #d4af37;
+      margin-top: 0;
+    }
+
+    .blog-post-preview p {
+      color: #ccc;
+    }
+
+    .blog-post-preview a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #00f7ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .blog-post-preview a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/exuweblogo.png" alt="ExUrban Logo" class="site-logo" />
+    </div>
+    <ul class="nav-buttons">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="bio.html">Our Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Blog Content -->
+  <main class="blog-container">
+    <div class="blog-header">
+      <img src="images/exublog.png" alt="The ExUrban Blog Banner" />
+      <h1>📝 The ExUrban Blog</h1>
+      <p>Updates, insights, and behind-the-scenes thoughts from the dev desk.</p>
+    </div>
+
+    <div class="blog-post-preview">
+      <h2>How We Built a Custom Dev Studio Without Templates</h2>
+      <p>From logistics manager to full-stack developer — our founder's story of going from zero to custom code, and why it matters for the future of small business tech.</p>
+      <a href="#">Read more →</a>
+    </div>
+
+    <div class="blog-post-preview">
+      <h2>Top 5 Tools We Use to Keep Client Sites Running Smooth</h2>
+      <p>We’re not just builders — we’re operators. Here are five systems we implement to make sure your website doesn’t just look good, but works reliably 24/7.</p>
+      <a href="#">Read more →</a>
+    </div>
+
+    <div class="blog-post-preview">
+      <h2>Debugging in a Pink Office: A Neurodivergent Dev's Secret Weapon</h2>
+      <p>It’s more than aesthetics — creating a workspace that supports your brain can transform how you show up in tech. Here’s what worked for Judy and why it might work for you.</p>
+      <a href="#">Read more →</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> ExUrban Technologies — Bridging the Digital Divide.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Founder | ExUrban Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero-image {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 40px #00f7ffaa, 0 10px 30px rgba(0, 0, 0, 0.5);
+      margin-top: 1rem;
+      animation: floatHero 4s ease-in-out infinite;
+      transition: transform 0.3s ease;
+      background-color: #0a0a0a;
+      padding: 12px;
+    }
+
+    @keyframes floatHero {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/exuweblogo.png" alt="ExUrban Logo" class="site-logo" />
+    </div>
+    <nav>
+    <ul class="nav-buttons">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="bio.html">Our Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Bio Section -->
+  <main>
+    <section class="hero">
+      <img src="images/exujudybgbio.png" alt="EXU Judy Office Background" class="hero-image" />
+      <div class="hero-text">
+        <h1>Meet Judy Wetzel</h1>
+        <p class="tagline">Founder • Visionary • Full-Stack Sorceress</p>
+      </div>
+    </section>
+
+    <section class="content-container">
+      <h2>Why I Build</h2>
+      <p>
+        I created ExUrban Technologies to give everyday people access to modern, high-performance tech — without the gatekeeping, the jargon, or the inflated price tags. As a self-taught full stack developer and entrepreneur, 
+        I’ve built my skill set from the ground up through hands-on work, deep dives, and relentless problem solving.
+      </p>
+      <h2>My Background</h2>
+      <p>
+        I understand what it’s like to navigate systems that weren’t built for you — and I know how to build new ones that are.
+        My mission is to translate complex tech into practical, empowering solutions for small businesses, creative founders, 
+        and anyone who's ready to grow but tired of hitting walls.
+        I don’t just code — I architect digital ecosystems that are secure, scalable, and deeply human-centered.
+        </p>
+
+      <h2>The Office Vibe</h2>
+      <p>
+        Yes, that’s a pink fur wall behind me. I run ExU like a creative command center — equal parts tech lab and glitter bomb. If you're looking for polished professionalism with heart, humor, and a heavy dose of capability — you’ve found it.
+      </p>
+
+      <p><strong>I'm not here to compete with tech giants — I'm here to build what they can't: sites that resonate.</strong></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> ExUrban Technologies — Bridging the Digital Divide.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | ExUrban Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .portfolio-container {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 1rem;
+    }
+
+    .portfolio-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .portfolio-header h1 {
+      font-size: 2.5rem;
+      color: #00f7ff;
+      margin-bottom: 0.5rem;
+    }
+
+    .portfolio-header p {
+      color: #aaa;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background-color: #111;
+      border: 2px solid #00f7ff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 0 20px #00f7ff22;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .project-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #d4af37;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-description {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #00f7ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/exuweblogo.png" alt="ExUrban Logo" class="site-logo" />
+    </div>
+    <nav>
+    <ul class="nav-buttons">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="bio.html">Our Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html"></a>Blog</li>
+      </ul>
+    </nav>
+    </header>
+
+  <!-- Main Content -->
+  <main class="portfolio-container">
+    <div class="portfolio-header">
+      <h1>🚀 Portfolio</h1>
+      <p>Here’s a look at what we've built — real projects for real people, powered by ExUrban tech.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-title">Allusion Mystery School</div>
+        <div class="project-description">
+          A custom-coded spiritual academy built with layered symbolic design, a SQL-powered “Oracle,” and immersive dreamscape UX.
+        </div>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Parker Maison (Shopify Live)</div>
+        <div class="project-description">
+          Vintage meets modern commerce. Live selling integration, Instagram automation, and custom shipping logic — built for scale.
+        </div>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Jarhead Interiors (HTML Rebuild)</div>
+        <div class="project-description">
+          A local DIY design shop site was rebuilt from a generic editor into a fully owned custom site with fast loading and SEO support.
+        </div>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">ExUrban Internal: The Diamond Tower</div>
+        <div class="project-description">
+          A conceptual portfolio engine that links projects, templates, services, and even developer training under one interactive “HQ.”
+        </div>
+        <a href="#" class="project-link">Explore the Tower →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> ExUrban Technologies — Bridging the Digital Divide.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
